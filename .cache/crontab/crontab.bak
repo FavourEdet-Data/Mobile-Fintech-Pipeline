@@ -1,0 +1,3 @@
+*/30 * * * * python /data/data/com.termux/files/home/ingest_prices.py
+*/30 * * * * python /data/data/com.termux/files/home/observer_agent.py
+
