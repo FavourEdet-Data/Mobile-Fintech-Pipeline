@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Mobile-Fintech-Pipeline
+# Mobile-Fintech-Pipeline-Coingecko
 =======
 # Mobile Fintech Pipeline: Project 1
 An automated end-to-end data pipeline built entirely on Android via Termux.
