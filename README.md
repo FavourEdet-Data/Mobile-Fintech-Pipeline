@@ -140,7 +140,7 @@ python test_agent.py
 
 🤝 Connect
 Built this project as part of my journey into AI-powered data engineering. I'm passionate about building systems that combine data infrastructure with intelligent automation.
-LinkedIn: [Favour Edet (https://www.linkedin.com/in/favour-edet-a773b737b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)]
+LinkedIn: [Favour Edet(https://www.linkedin.com/in/favour-edet-a773b737b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 Portfolio: favouredet-data.github.io
 
 ⭐ If you found this project interesting, please give it a star!
