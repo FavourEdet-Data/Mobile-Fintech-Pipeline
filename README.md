@@ -68,7 +68,7 @@ Data                              Data                       Delivered
 
 ### Installation
 
-```bash
+
 # Install Termux packages
 pkg install python git
 
@@ -81,15 +81,14 @@ pip install -r requirements.txt
 
 # Configure environment variables
 cp .env.example .env
-# Edit .env with your API keys
 Configuration
 # config.py
-SNOWFLAKE_ACCOUNT = "your_account"
-SNOWFLAKE_USER = "your_user"
-SNOWFLAKE_WAREHOUSE = "your_warehouse"
+SNOWFLAKE_ACCOUNT = "my_account"
+SNOWFLAKE_USER = "snowflake_user"
+SNOWFLAKE_WAREHOUSE = "compute_warehouse"
 COINGECKO_API_KEY = "your_api_key"
-SLACK_WEBHOOK_URL = "your_webhook_url"
-AI_API_KEY = "your_ai_api_key"
+SLACK_WEBHOOK_URL = "my_webhook_url"
+AI_API_KEY = "my_ai_api_key"
 Running the Pipeline
 # One-time data ingestion
 python ingest_crypto_data.py
@@ -100,7 +99,7 @@ python run_pipeline.py
 # Test AI agent
 python test_agent.py
 
-bash ```
+
 
 
 
