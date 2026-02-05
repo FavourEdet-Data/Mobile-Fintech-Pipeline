@@ -2,26 +2,10 @@
 
 > Automated cryptocurrency market analysis system that ingests real-time data, generates AI-powered insights, and delivers actionable alerts to Slack. Built entirely on mobile device using Termux.
 
-[
-
-![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-
-](https://www.python.org/)
-[
-
-![Snowflake](https://img.shields.io/badge/Snowflake-Data_Warehouse-29B5E8.svg)
-
-](https://www.snowflake.com/)
-[
-
-![AI Agent](https://img.shields.io/badge/AI-Agent_Powered-orange.svg)
-
-]()
-[
-
-![Slack](https://img.shields.io/badge/Slack-Notifications-4A154B.svg)
-
-](https://slack.com/)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+[![Snowflake](https://img.shields.io/badge/Snowflake-Data_Warehouse-29B5E8.svg)](https://www.snowflake.com/)
+[![AI Agent](https://img.shields.io/badge/AI-Agent_Powered-orange.svg)]()
+[![Slack](https://img.shields.io/badge/Slack-Notifications-4A154B.svg)](https://slack.com/)
 
 ## 📊 Project Overview
 
@@ -52,9 +36,9 @@ Data                              Data                       Delivered
 | **Data Source** | CoinGecko API |
 | **Ingestion** | Python, Requests, Schedule |
 | **Storage** | Snowflake Data Warehouse |
-| **Transformation** | SQL, [dbt if you used it] |
-| **AI Layer** | [Claude API / OpenAI / whatever you used] |
-| **Orchestration** | [Python scripts / Cron / whatever you used] |
+| **Transformation** | [SQL] |
+| **AI Layer** | [OpenAI API] |
+| **Orchestration** | [Python scripts] |
 | **Alerting** | Slack Webhooks / Slack API |
 | **Environment** | Termux (Android) |
 
@@ -115,6 +99,10 @@ python run_pipeline.py
 
 # Test AI agent
 python test_agent.py
+
+bash ```
+
+
 
 📊 Data Model
 Raw Layer:
