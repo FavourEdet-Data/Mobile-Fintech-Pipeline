@@ -69,20 +69,20 @@ Data                              Data                       Delivered
 ### Installation
 
 
-# Install Termux packages
+#### Install Termux packages
 pkg install python git
 
-# Clone repository
+#### Clone repository
 git clone https://github.com/FavourEdet-Data/Mobile-Fintech-Pipeline.git
 cd Mobile-Fintech-Pipeline
 
-# Install Python dependencies
+#### Install Python dependencies
 pip install -r requirements.txt
 
-# Configure environment variables
+#### Configure environment variables
 cp .env.example .env
 Configuration
-# config.py
+##### config.py
 SNOWFLAKE_ACCOUNT = "my_account"
 SNOWFLAKE_USER = "snowflake_user"
 SNOWFLAKE_WAREHOUSE = "compute_warehouse"
@@ -93,10 +93,10 @@ Running the Pipeline
 # One-time data ingestion
 python ingest_crypto_data.py
 
-# Start scheduled pipeline (runs every X hours)
+#### Start scheduled pipeline (runs every X hours)
 python run_pipeline.py
 
-# Test AI agent
+### Test AI agent
 python test_agent.py
 
 
@@ -122,25 +122,25 @@ Proactive alerting for trading opportunities
 Scalable architecture ready for production deployment
 
 🔮 Future Enhancements
-[ ] Add more data sources (Binance, Coinbase APIs)
-[ ] Implement predictive models for price forecasting
-[ ] Build interactive dashboard for historical insights
-[ ] Add portfolio tracking and automated trading signals
-[ ] Expand AI agent capabilities with RAG for news analysis
+- [ ] Add more data sources (Binance, Coinbase APIs)
+- [ ] Implement predictive models for price forecasting
+- [ ] Build interactive dashboard for historical insights
+- [ ] Add portfolio tracking and automated trading signals
+- [ ] Expand AI agent capabilities with RAG for news analysis
 
 📝 Lessons Learned
-Technical Challenges:
-Managing API rate limits on free tier
-Handling mobile network interruptions
-Optimizing Snowflake costs with smart data retention
-Solutions Implemented:
-Implemented exponential backoff for API requests
-Added error logging and automatic retry logic
-Used dynamic tables in Snowflake for efficient updates
+• Technical Challenges:
+- Managing API rate limits on free tier
+- Handling mobile network interruptions
+- Optimizing Snowflake costs with smart data retention
+•Solutions Implemented:
+- Implemented exponential backoff for API requests
+- Added error logging and automatic retry logic
+- Used dynamic tables in Snowflake for efficient updates
 
 🤝 Connect
 Built this project as part of my journey into AI-powered data engineering. I'm passionate about building systems that combine data infrastructure with intelligent automation.
-LinkedIn: Favour Edet
+LinkedIn: [Favour Edet] (https://www.linkedin.com/in/favour-edet-a773b737b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 Portfolio: favouredet-data.github.io
 
 ⭐ If you found this project interesting, please give it a star!
