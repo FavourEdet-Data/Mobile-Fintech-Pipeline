@@ -36,9 +36,9 @@ Data                              Data                       Delivered
 | **Data Source** | CoinGecko API |
 | **Ingestion** | Python, Requests, Schedule |
 | **Storage** | Snowflake Data Warehouse |
-| **Transformation** | [SQL] |
-| **AI Layer** | [OpenAI API] |
-| **Orchestration** | [Python scripts] |
+| **Transformation** | SQL |
+| **AI Layer** | OpenAI API |
+| **Orchestration** | Python scripts |
 | **Alerting** | Slack Webhooks / Slack API |
 | **Environment** | Termux (Android) |
 
@@ -90,7 +90,7 @@ COINGECKO_API_KEY = "your_api_key"
 SLACK_WEBHOOK_URL = "my_webhook_url"
 AI_API_KEY = "my_ai_api_key"
 Running the Pipeline
-# One-time data ingestion
+##### One-time data ingestion
 python ingest_crypto_data.py
 
 #### Start scheduled pipeline (runs every X hours)
@@ -104,22 +104,22 @@ python test_agent.py
 
 
 📊 Data Model
-Raw Layer:
-crypto_prices_raw - Real-time price data from CoinGecko
-market_metrics_raw - Volume, market cap, volatility metrics
-Transformed Layer:
-crypto_prices_hourly - Aggregated hourly price movements
-price_changes_daily - Daily percentage changes and trends
-volatility_metrics - Calculated volatility indicators
-Insights Layer:
-ai_generated_insights - AI agent analysis results
-alert_history - Log of all Slack notifications sent
+### Raw Layer:
+•crypto_prices_raw - Real-time price data from CoinGecko
+•market_metrics_raw - Volume, market cap, volatility metrics
+### Transformed Layer:
+•crypto_prices_hourly - Aggregated hourly price movements
+•price_changes_daily - Daily percentage changes and trends
+•volatility_metrics - Calculated volatility indicators
+### Insights Layer:
+•ai_generated_insights - AI agent analysis results
+•alert_history - Log of all Slack notifications sent
 
 🎯 Business Impact
-Automated 24/7 monitoring of cryptocurrency markets
-Reduced analysis time from hours to seconds using AI
-Proactive alerting for trading opportunities
-Scalable architecture ready for production deployment
+•Automated 24/7 monitoring of cryptocurrency markets
+•Reduced analysis time from hours to seconds using AI
+•Proactive alerting for trading opportunities
+•Scalable architecture ready for production deployment
 
 🔮 Future Enhancements
 - [ ] Add more data sources (Binance, Coinbase APIs)
@@ -129,18 +129,18 @@ Scalable architecture ready for production deployment
 - [ ] Expand AI agent capabilities with RAG for news analysis
 
 📝 Lessons Learned
-• Technical Challenges:
-- Managing API rate limits on free tier
-- Handling mobile network interruptions
-- Optimizing Snowflake costs with smart data retention
-•Solutions Implemented:
-- Implemented exponential backoff for API requests
-- Added error logging and automatic retry logic
-- Used dynamic tables in Snowflake for efficient updates
+### Technical Challenges:
+•Managing API rate limits on free tier
+•Handling mobile network interruptions
+•Optimizing Snowflake costs with smart data retention
+### Solutions Implemented:
+•Implemented exponential backoff for API requests
+•Added error logging and automatic retry logic
+•Used dynamic tables in Snowflake for efficient updates
 
 🤝 Connect
 Built this project as part of my journey into AI-powered data engineering. I'm passionate about building systems that combine data infrastructure with intelligent automation.
-LinkedIn: [Favour Edet] (https://www.linkedin.com/in/favour-edet-a773b737b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+LinkedIn: [Favour Edet (https://www.linkedin.com/in/favour-edet-a773b737b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)]
 Portfolio: favouredet-data.github.io
 
 ⭐ If you found this project interesting, please give it a star!
